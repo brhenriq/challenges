@@ -36,6 +36,21 @@ server.get("/trainings", function(request, response){
   return response.render("trainings", { items: data_trainings });
 });
 
+server.get("/course", function(request, response){
+  const id = request.query.id;
+  const training = data_trainings.find(function(training){
+      return training.id == id;
+  });
+
+  if(!training){
+    return response.send("Training not found")
+  }
+
+
+
+  return response.render("course", { training });
+});
+
 server.use(function(req, res) {
   res.status(404).render("not-found");
 });
