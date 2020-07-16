@@ -15,10 +15,13 @@
   <section class="cards">
     {% for item in items %}
       <div class="card" id="{{item.id}}">
-        <div class="card_image-container">
+        <div class="card_image-container {{ 'featured-wrapper' if item.featured }}">
           <img 
           src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/{{item.id}}.svg"
           alt="Imagem de {{item.name}}" />
+          {% if item.featured %}
+            <div class="featured">Featured</div>
+          {%endif%}
         </div>
 
         <div class="card_content">

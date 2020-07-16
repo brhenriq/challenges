@@ -129,6 +129,7 @@ body {
   background-color: var(--card_color);
   border-radius: 25px;
   display: grid;
+  cursor: pointer;
 }
 
 .card .card_image-container img{
@@ -156,6 +157,7 @@ body {
   text-align: center;
 }
 
+/*Modal*/
 .modal_overlay {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -192,4 +194,19 @@ iframe {
   height: 90%;
   position: absolute;
   top: 5%;
+}
+
+/*Featured*/
+.featured-wrapper.card_image-container {
+  position: relative;
+}
+
+.featured {
+  background: #f7d05f;
+  color: #111;
+  padding: 2px 8px;
+  position: absolute;
+  right: 5px;
+  border-radius: 26px;
+  top: -10px;
 }
