@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  {% block head %}
+    <title>Rocketseat</title>
+  {% endblock %}
+  <link href="/styles.css" rel="stylesheet" />
+  <link rel="icon" 
+  href="https://raw.githubusercontent.com/Rocketseat/bootcamp-launchbase-desafios-02/master/desafios/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header id="menu">
+    <div class="links">
+      <a href="/">Sobre</a>
+      <a href="/trainings">Conteúdos</a>
+    </div>
+  </header>
+
+  {% block content %}
+  
+  {% endblock %}
+  
+</body>
+</html>
