@@ -30,7 +30,9 @@ body {
 }
 
 .links a:hover{
-  border-bottom: 1px solid #111111;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 200ms;
 }
 
 #wrapper {
@@ -115,4 +117,28 @@ footer {
 footer p {
   color: #999999;
   padding: 23px;
+}
+
+
+/*Página Sobre*/
+.about_text {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.about_text h1{
+  color: #111111;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.about_text p{
+  color: #444444;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.about_text p{
+  margin-top: 20px;
 }
