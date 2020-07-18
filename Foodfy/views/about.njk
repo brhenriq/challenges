@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "layout.njk" %}
 
-<head>
-  <meta charset="UTF-8">
-  <title>Foodfy</title>
-  <link rel="stylesheet" href="/public/styles.css" />
-</head>
+{% block head %}
+  <title>Sobre - Foodfy</title>
+{% endblock %}
 
-<body>
-  <header id="menu">
-    <div class="links">
-      <a href="index.html"><img src="../assets/logo.png" /></a>
-      <a href="about.html">Sobre</a>
-      <a href="revenue.html">Receitas</a>
-    </div>
-  </header>
-
+{% block content%}
   <div class="about_text">
     <h1>Sobre o Foodfy</h1>
     <p>Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus,
@@ -64,11 +53,4 @@
       malesuada sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
     </p>
   </div>
-
-  <footer>
-    <p>Todos direitos reservados, receitas Foodfy</p>
-  </footer>
-
-</body>
-
-</html>
+{% endblock %}
