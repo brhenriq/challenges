@@ -1,4 +1,5 @@
 const express = require('express');
+const instructors = require('./instructors');
 const routes = express.Router();
 
 routes.get('/', function(request, response){
@@ -13,9 +14,7 @@ routes.get('/instructors/create', function(request, response){
   return response.render("instructors/create");
 });
 
-routes.post('/instructors', function(request, response){
-  return response.send("recebido");
-});
+routes.post('/instructors', instructors.post);
 
 routes.get('/members', function(request, response){
   return response.render("members");
