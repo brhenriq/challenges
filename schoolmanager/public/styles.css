@@ -132,3 +132,34 @@ header {
   text-transform: uppercase;
   font-size: 12px;
 }
+
+/*Create*/
+select,
+input {
+  width: 100%;
+  outline: none;
+
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="radio"]{
+  width: initial;
+  margin-right: 4px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+button[type="submit"]{
+  padding: 8px 32px;
+  background-color: var(--primary-color);
+  color: #FFF;
+  border-radius: 4px;
+  margin-top: 32px;
+  width: 100%;
+  font-size: 16px;
+}
