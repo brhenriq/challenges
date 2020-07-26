@@ -1,0 +1,86 @@
+<div class="item">
+      <div>Avatar URL</div>
+      <div>
+        <input 
+          type="url" 
+          name="avatar_url" 
+          placeholder="http://" 
+          value="{{teacher.avatar_url}}">
+      </div>
+    </div>
+
+    <div class="item">
+      <div>Nome completo</div>
+      <div>
+        <input 
+          type="text" 
+          name="name" 
+          placeholder="Nome do Professor(a)"
+          value="{{teacher.name}}">
+      </div>
+    </div>
+
+    <div class="item">
+      <div>Data de Nascimento</div>
+      <div>
+        <input 
+          type="date" 
+          name="birth"
+          value="{{teacher.birth}}">
+      </div>
+    </div>
+
+    <div class="item">
+      <div>Grau de Escolaridade</div>
+      <select name="schooling">
+        <option 
+          value="médio" 
+          {% if teacher.schooling == 'médio' %} selected {% endif %}>Ensino Médio Completo
+        </option>
+        <option 
+          value="superior" 
+          {% if teacher.schooling == 'superior' %} selected {% endif %}>Ensino Superior Completo
+        </option>
+        <option 
+        value="mestrado"
+        {% if teacher.schooling == 'mestrado' %} selected {% endif %}>Mestrado
+        </option>
+        <option 
+          value="doutorado"
+          {% if teacher.schooling == 'doutorado' %} selected {% endif %}>Doutorado
+        </option>
+      </select>
+    </div>
+
+    <div class="item">
+      <div>Tipo de Aula</div>
+      <div>
+        <span>
+          <input 
+          type="radio" 
+          name="type_class" 
+          value="P" 
+          {% if teacher.type_class == 'P' %} checked {% endif %}>Presencial
+        </span>
+        <span>
+          <input 
+            type="radio" 
+            name="type_class" 
+            value="D" 
+            {% if teacher.type_class == 'D' %} checked {% endif %}>À Distância
+        </span>
+      </div>
+    </div>
+
+    <div class="item">
+      <div>Área de atuação</div>
+      <div>
+        <input 
+          type="text" 
+          name="atuation" 
+          placeholder="Separe sua área de atuação com vírgula"
+          value="{{teacher.atuation}}">
+      </div>
+    </div>
+
+    <button type="submit">Salvar</button>
